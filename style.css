@@ -37,3 +37,20 @@ a:hover {
     text-decoration: underline;      
     color: #0056b3;                  
 }
+
+.education-item {
+    display: flex;                    
+    justify-content: space-between;   
+    margin-bottom: 20px;              
+}
+
+.dates {
+    flex: 1;                          
+    text-align: left;                 
+}
+
+.title {
+    flex: 1;                          
+    text-align: right;                
+}
+
