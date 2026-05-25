@@ -39,10 +39,22 @@ a:hover {
 }
 
 .education-item {
-    display: flex;                    
-    justify-content: space-between;   
-    margin-bottom: 20px;              
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+
+    margin: 0;
+    padding: 0;
 }
+
+.education-item h3,
+.education-item h4,
+.education-item p {
+    margin: 0;
+    padding: 0;
+}
+
 
 .dates {
     flex: 1;                          
