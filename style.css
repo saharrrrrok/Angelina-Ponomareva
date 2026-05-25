@@ -80,7 +80,7 @@ a:hover {
 .dates::after {
     content: "";
     width: 1px;
-    background-color: #800000;
+    background-color: black;
     position: absolute;
     top: 0;
     bottom: 0;
