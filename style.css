@@ -44,7 +44,6 @@ a:hover {
 
 
 .education-item {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -56,30 +55,34 @@ a:hover {
     h3,
     h4,
     p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-    border-bottom: 1px solid #800000; 
-    margin-bottom: 10px; 
-    padding-bottom: 5px; 
-    border-bottom: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        border-bottom: none; 
+        margin-bottom: 10px;
+        padding-bottom: 5px;
     }
-    }
+
     .dates h3,
     .dates h4,
     .title p {
-        border-bottom: 1px solid #800000; 
+        border-bottom: 1px solid #800000;
     }
-    &::after {
-        content: "";
-        width: 1px;
-        background-color: #800000; 
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        z-index: 1;
-    }
+}
+
+.dates {
+    position: relative; 
+}
+
+.dates::after {
+    content: "";
+    width: 1px;
+    background-color: #800000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: 1;
 }
 
 .dates {
