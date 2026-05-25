@@ -80,4 +80,15 @@ a:hover {
     height: auto;             
 }
 
+.nav-link {
+    background-color: #800000; 
+    color: white;               
+    border: none;              
+}
+
+.nav-link:hover {
+    background-color: #600000; 
+}
+
+
 
