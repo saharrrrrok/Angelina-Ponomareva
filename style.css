@@ -54,3 +54,11 @@ a:hover {
     text-align: right;                
 }
 
+.title h3,
+.title h4 {
+    font-weight: bold; 
+    margin: 0;
+    color: #333;
+}
+
+
