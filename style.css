@@ -51,10 +51,10 @@ a:hover {
 .education-item h3,
 .education-item h4,
 .education-item p {
-    margin: 0;
-    padding: 0;
+    margin: 0;        
+    padding: 0;       
+    line-height: 1.2; 
 }
-
 
 .dates {
     flex: 1;                          
