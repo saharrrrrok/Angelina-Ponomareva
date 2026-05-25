@@ -62,6 +62,13 @@ a:hover {
     border-bottom: 1px solid #800000; 
     margin-bottom: 10px; 
     padding-bottom: 5px; 
+    border-bottom: none;
+    }
+    }
+    .dates h3,
+    .dates h4,
+    .title p {
+        border-bottom: 1px solid #800000; 
     }
     &::after {
         content: "";
