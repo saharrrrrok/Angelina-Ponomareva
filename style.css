@@ -84,7 +84,7 @@ a:hover {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 150px; 
+    right: 150px; 
     z-index: 1;
 }
 
