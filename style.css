@@ -68,7 +68,6 @@ a:hover {
     text-align: left;
     position: relative;
     margin-right: 10px; 
-    padding-left: 100px;
 }
 
 .dates::after {
