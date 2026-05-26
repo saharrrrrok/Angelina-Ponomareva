@@ -64,10 +64,12 @@ a:hover {
 }
 
 .dates {
-    flex: 1;
+    display: flex; 
+    flex: 0 0 auto; 
     text-align: left;
     position: relative;
-    margin-right: 10px; 
+    margin-left: auto; 
+    padding-right: 10px; 
 }
 
 .dates::after {
