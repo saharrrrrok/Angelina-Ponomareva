@@ -67,7 +67,7 @@ a:hover {
     flex: 1;
     text-align: left;
     position: relative;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .dates::after {
