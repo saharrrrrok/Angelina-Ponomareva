@@ -65,10 +65,12 @@ a:hover {
 
 .dates {
     flex: 1;
-    text-align: left;
     position: relative;
     margin-right: 10px; 
+    display: flex;
+    align-items: flex-start;
 }
+
 .dates p {
     padding-left: 100px; 
 }
