@@ -4,21 +4,127 @@
     <meta charset="UTF-8">
     <title>Обо мне — Ангелина Пономарева</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #006064;
+        }
+
+        .content-block {
+            display: flex;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .text-side {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-side {
+            flex: 0 0 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image-side img {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .contacts {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background-color: #880e4f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #c2185b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .content-block {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .image-side {
+                flex-basis: auto;
+                padding: 20px;
+            }
+
+            .image-side img {
+                border-radius: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Ангелина Пономарева</h1>
         <nav>
-            <a href="index.html">Главная</a> |
-            <a href="about.html">Обо мне</a> |
+            <a href="index.html">Главная</a>
+            <a href="about.html">Обо мне</a>
             <a href="education.html">Образование</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Обо мне</h2>
-            <p>Меня интересует программирование в самых разных направлениях. Сейчас я пробую новое и пытаюсь определиться с профессией в IT-сфере</p>
+        <section class="content-block">
+            <div class="text-side">
+                <h2>Обо мне</h2>
+                <p>Меня интересует программирование в самых разных направлениях. Сейчас я пробую новое и пытаюсь определиться с профессией в IT‑сфере.</p>
+            </div>
+            <div class="image-side">
+                <img src="https://avatars.mds.yandex.net/i?id=0dc3a066708dc425a88dea78a573158f7baa837f-5743478-images-thumbs&n=13" alt="Кролик">
+            </div>
         </section>
     </main>
 
@@ -30,6 +136,6 @@
         <a href="tel:89270000000" class="btn">Позвонить: 8 927 000-00-00</a>
         <a href="mailto:linalina@example.com" class="btn">Написать на почту: linalina@example.com</a>
     </footer>
-    
 </body>
 </html>
+
