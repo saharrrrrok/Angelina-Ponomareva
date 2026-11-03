@@ -1,7 +1,7 @@
 /* Общие настройки страницы */
 body {
     font-family: 'Arial', sans-serif; 
-    background-color: #FFB6C1;       
+    background-color: #e0f7fa;       
     margin: 0;                       
     padding: 20px;                   
     text-align: center;              
@@ -27,21 +27,37 @@ p:nth-child(3) {
     font-size: 1em;
 }
 
-/* Стили для ссылки (а) */
-a {
+.btn {
     color: white; 
-    background-color: #800000; 
+    background-color: #29b6f6; 
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px; 
 }
 
-a:hover {
-    text-decoration: underline;
-    background-color: #600000;
+.btn:hover {
+    background-color: #0288d1;
     color: white;
 }
 
+.nav-link {
+    background-color: #29b6f6; 
+    color: white;               
+    border: none;              
+}
+
+.nav-link:hover {
+    background-color: #0288d1; 
+}
+
+.college-link {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.college-link:hover {
+    color: #0000AA;
+}
 
 .education-item {
     display: flex;
@@ -69,33 +85,11 @@ a:hover {
     position: relative;
     margin-right: 10px;
 }
+
 .dates p {
     padding-left: 100px;
 }
 
-.dates::after {
-    content: "";
-    width: 1px;
-    background-color: #800000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 100%; 
-    margin-left: 10px;
-    z-index: 1;
-}
-
-.education-item h3::after,
-.education-item h4::after,
-.education-item p::after {
-    content: "";
-    width: 100%;
-    border-bottom: 1px solid #800000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
 .title {
     flex: 1;
     padding-left: 100px; 
@@ -115,15 +109,6 @@ a:hover {
     height: auto;             
 }
 
-.nav-link {
-    background-color: #800000; 
-    color: white;               
-    border: none;              
-}
-
-.nav-link:hover {
-    background-color: #600000; 
-}
 
 
 
