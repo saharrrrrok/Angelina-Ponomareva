@@ -5,30 +5,43 @@
     <title>Ангелина Пономарева</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .about-container {
+        .content-block {
             display: flex;
-            align-items: center;           
-            justify-content: space-between; 
-            gap: 40px;                      
-            flex-wrap: wrap;                
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
-        .about-text {
-            flex: 1;                        
-            min-width: 300px;               
+        .text-side {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-
-        .about-image {
-            flex: 0 0 250px;                 
+        .image-side {
+            flex: 0 0 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-side img {
             max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+            max-height: 300px;
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .content-block {
+                flex-direction: column;
+            }
+            .image-side {
+                flex-basis: auto;
+                padding: 20px;
+            }
         }
     </style>
 </head>
-
 <body> 
-
     <header>
         <h1>Ангелина Пономарева</h1>
         <nav>
@@ -39,13 +52,15 @@
     </header>
 
     <main>
-        <section class="about-container">
-            <div class="about-text">
+        <section class="content-block">
+            <div class="text-side">
                 <h2>Обо мне</h2>
                 <p>Я — студентка 2 курса, активно развиваюсь в сфере информационных технологий. Пока я нахожусь в поиске своего направления внутри IT, изучаю разные инструменты и технологии, чтобы понять, что мне ближе всего.</p>
                 <p>Сейчас обучаюсь в филиале СамГТУ (г. Новокуйбышевск) по специальности «Информатика и вычислительная техника».</p>
             </div>
-            <img src="https://avatars.mds.yandex.net/i?id=0dc3a066708dc425a88dea78a573158f7baa837f-5743478-images-thumbs&n=13" alt="Кролик" class="about-image">
+            <div class="image-side">
+                <img src="https://avatars.mds.yandex.net/i?id=0dc3a066708dc425a88dea78a573158f7baa837f-5743478-images-thumbs&n=13" alt="Кролик">
+            </div>
         </section>
     </main>
 
@@ -53,6 +68,6 @@
         <a href="tel:89270000000" class="btn">Позвонить: 8 927 000-00-00</a>
         <a href="mailto:linalina@example.com" class="btn">Написать на почту: linalina@example.com</a>
     </div>
-
 </body> 
 </html>
+
