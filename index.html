@@ -5,13 +5,21 @@
     <title>Ангелина Пономарева</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            background-color: #e0f7fa; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         .content-block {
             display: flex;
             max-width: 900px;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            background-color: #ffffff; 
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
+
         .text-side {
             flex: 1;
             padding: 40px;
@@ -19,24 +27,75 @@
             flex-direction: column;
             justify-content: center;
         }
+
         .image-side {
             flex: 0 0 300px;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px;
         }
+
         .image-side img {
             max-width: 100%;
             max-height: 300px;
             object-fit: contain;
+            border-radius: 0 12px 12px 0;
         }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #006064;
+        }
+
+        .contacts {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background-color: #880e4f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #c2185b;
+        }
+
         @media (max-width: 768px) {
             .content-block {
                 flex-direction: column;
+                margin: 20px;
             }
+
             .image-side {
                 flex-basis: auto;
                 padding: 20px;
+            }
+
+            .image-side img {
+                border-radius: 12px;
             }
         }
     </style>
@@ -70,4 +129,5 @@
     </div>
 </body> 
 </html>
+
 
