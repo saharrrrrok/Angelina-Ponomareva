@@ -77,9 +77,19 @@
         .education-info p {
             margin: 0;
             font-size: 0.95em;
-            color: #555;       
+            color: #555;
             line-height: 1.6;
-            font-weight: normal; 
+            font-weight: normal;
+        }
+
+        .college-link {
+            color: #0000EE; 
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .college-link:hover {
+            color: #0000AA; 
         }
 
         .education-years {
@@ -170,7 +180,7 @@
                     <tr>
                         <td class="education-type">Среднее профессиональное образование</td>
                         <td class="education-info">
-                            <h3>Колледж СГК, г. Самара</h3>
+                            <h3><a href="https://samgk.ru/" class="college-link" target="_blank" rel="noopener noreferrer">Колледж СГК, г. Самара</a></h3>
                             <p>Специальность: «Информационные системы и программирование»</p>
                             <p>Диплом о среднем профессиональном образовании</p>
                         </td>
@@ -191,6 +201,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
