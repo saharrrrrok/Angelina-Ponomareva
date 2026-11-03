@@ -41,29 +41,58 @@
             padding: 40px;
         }
 
-        .education-item {
+        h2 {
+            text-align: center;
+            color: #333;
             margin-bottom: 30px;
-            padding-bottom: 20px;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .education-table td {
+            padding: 15px 0;
+            vertical-align: top;
+            color: #444;
+        }
+
+        .education-table tr:not(:last-child) {
             border-bottom: 1px solid #eee;
         }
 
-        .education-item:last-child {
-            border-bottom: none;
+        .education-type {
+            font-weight: bold;
+            color: #333;
+            width: 20%;
         }
 
-        .education-item h3 {
-            margin: 0 0 10px 0;
+        .education-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1em;
             color: #333;
         }
 
-        .education-item h4 {
-            margin: 0 0 10px 0;
+        .education-info h4 {
+            margin: 0 0 5px 0;
+            font-size: 0.95em;
             color: #555;
         }
 
-        .education-item p {
+        .education-info p {
             margin: 0;
-            color: #444;
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .education-years {
+            font-weight: bold;
+            color: #333;
+            text-align: right;
+            width: 25%;
+            white-space: nowrap;
         }
 
         .contacts {
@@ -105,33 +134,34 @@
     <main>
         <section class="content-block">
             <h2>Образование</h2>
-
-            <article>
-                <div class="education-item">
-                    <h3>Начальная школа</h3>
-                    <h4>Школа №6, г. Новокуйбышевск</h4>
-                    <p>Годы обучения: 2010–2014</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="education-item">
-                    <h3>Средняя и старшая школа (5–11 классы)</h3>
-                    <h4>Школа №7, г. Новокуйбышевск</h4>
-                    <p>Аттестат о среднем общем образовании</p>
-                    <p>Годы обучения: 2014–2021</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="education-item">
-                    <h3>Среднее профессиональное образование</h3>
-                    <h4>Колледж СГК, г. Самара</h4>
-                    <p>Специальность: «Информационные системы и программирование»</p>
-                    <p>Диплом о среднем профессиональном образовании</p>
-                    <p>Годы обучения: 2021–2024</p>
-                </div>
-            </article>
+            <table class="education-table">
+                <tbody>
+                    <tr>
+                        <td class="education-type">Начальная школа</td>
+                        <td class="education-info">
+                            <h3>Школа №6, г. Новокуйбышевск</h3>
+                        </td>
+                        <td class="education-years">Годы обучения: 2010–2014</td>
+                    </tr>
+                    <tr>
+                        <td class="education-type">Средняя и старшая школа (5–11 классы)</td>
+                        <td class="education-info">
+                            <h3>Школа №7, г. Новокуйбышевск</h3>
+                            <p>Аттестат о среднем общем образовании</p>
+                        </td>
+                        <td class="education-years">Годы обучения: 2014–2021</td>
+                    </tr>
+                    <tr>
+                        <td class="education-type">Среднее профессиональное образование</td>
+                        <td class="education-info">
+                            <h3>Колледж СГК, г. Самара</h3>
+                            <p>Специальность: «Информационные системы и программирование»</p>
+                            <p>Диплом о среднем профессиональном образовании</p>
+                        </td>
+                        <td class="education-years">Годы обучения: 2021–2024</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
@@ -145,4 +175,5 @@
     </footer>
 </body>
 </html>
+
 
