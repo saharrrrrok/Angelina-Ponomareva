@@ -4,81 +4,145 @@
     <meta charset="UTF-8">
     <title>Образование — Ангелина Пономарева</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #006064;
+        }
+
+        .content-block {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+        }
+
+        .education-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-item h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .education-item h4 {
+            margin: 0 0 10px 0;
+            color: #555;
+        }
+
+        .education-item p {
+            margin: 0;
+            color: #444;
+        }
+
+        .contacts {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            background-color: #880e4f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #c2185b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Ангелина Пономарева</h1>
         <nav>
-            <a href="index.html">Главная</a> |
-            <a href="about.html">Обо мне</a> |
+            <a href="index.html">Главная</a>
+            <a href="about.html">Обо мне</a>
             <a href="education.html">Образование</a>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="content-block">
             <h2>Образование</h2>
 
             <article>
                 <div class="education-item">
-                    <div class="dates">
-                        <br>
-                        <h3>Начальная школа</h3>
-                        <h4>Школа №6, г. Новокуйбышевск.</h4>
-                    </div>
-                    <div class="title">
-                        <br>
-                        <p>Годы обучения: 2010–2014.</p>
-                    </div>
+                    <h3>Начальная школа</h3>
+                    <h4>Школа №6, г. Новокуйбышевск</h4>
+                    <p>Годы обучения: 2010–2014</p>
                 </div>
             </article>
 
             <article>
                 <div class="education-item">
-                    <div class="dates">
-                        <br>
-                        <h3>Средняя и старшая школа (5–11 классы)</h3>
-                        <h4>Школа №7, г. Новокуйбышевск.</h4>
-                        <br>
-                        Аттестат о среднем общем образовании.
-                        <br>
-                    </div>
-                <div class="title">
-                        <br>
-                        <p>Годы обучения: 2014–2021.</p>
-                    </div>
+                    <h3>Средняя и старшая школа (5–11 классы)</h3>
+                    <h4>Школа №7, г. Новокуйбышевск</h4>
+                    <p>Аттестат о среднем общем образовании</p>
+                    <p>Годы обучения: 2014–2021</p>
                 </div>
             </article>
 
             <article>
                 <div class="education-item">
-                    <div class="dates">
-                        <br>
-                        <h3>Среднее профессиональное образование</h3>
-                        <h4>Колледж СГК, г. Самара</h4>
-                        <br>
-                        Специальность: «Информационные системы и программирование».
-                        <br>
-                        Диплом о среднем профессиональном образовании.
-                    </div>
-                    <div class="title">
-                        <br>
-                        <p>Годы обучения: 2021–2024.</p>
-                    </div>
+                    <h3>Среднее профессиональное образование</h3>
+                    <h4>Колледж СГК, г. Самара</h4>
+                    <p>Специальность: «Информационные системы и программирование»</p>
+                    <p>Диплом о среднем профессиональном образовании</p>
+                    <p>Годы обучения: 2021–2024</p>
                 </div>
             </article>
-
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Ангелина Пономарева. Все права защищены.</p>
     </footer>
-    
+
     <footer class="contacts">
         <a href="tel:89270000000" class="btn">Позвонить: 8 927 000-00-00</a>
         <a href="mailto:linalina@example.com" class="btn">Написать на почту: linalina@example.com</a>
     </footer>
-    
 </body>
 </html>
+
