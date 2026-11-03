@@ -53,7 +53,7 @@
         }
 
         .education-table td {
-            padding: 20px 0; 
+            padding: 25px 10px; 
             vertical-align: top;
             color: #444;
         }
@@ -66,30 +66,26 @@
             font-weight: bold;
             color: #333;
             width: 20%;
+            vertical-align: middle;
         }
 
         .education-info h3 {
-            margin: 0 0 8px 0;
+            margin: 0 0 10px 0;
             font-size: 1em;
             color: #333;
         }
 
-        .education-info h4 {
-            margin: 0 0 8px 0;
-            font-size: 0.95em;
-            color: #555;
-        }
-
         .education-info p {
             margin: 0;
-            font-size: 0.9em;
+            font-size: 0.95em;
             color: #555;
-            line-height: 1.5;
+            line-height: 1.6; 
         }
 
         .education-info .diploma {
-            font-weight: bold; 
+            font-weight: bold;
             color: #333;
+            margin-top: 5px;
         }
 
         .education-years {
@@ -98,6 +94,27 @@
             text-align: right;
             width: 25%;
             white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .education-type, .education-years {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+            .education-years {
+                text-align: left;
+                margin-top: 5px;
+                font-weight: normal;
+            }
+            .education-table td {
+                display: block;
+                border-bottom: 1px solid #eee;
+                padding: 15px 0;
+            }
+            .education-table tr:not(:last-child) {
+                border-bottom: none;
+            }
         }
 
         .contacts {
@@ -180,5 +197,6 @@
     </footer>
 </body>
 </html>
+
 
 
